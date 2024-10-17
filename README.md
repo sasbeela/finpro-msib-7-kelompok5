@@ -1,1 +1,0 @@
-# finpro-msib-7-kelompok5
