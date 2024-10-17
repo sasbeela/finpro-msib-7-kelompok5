@@ -1,0 +1,158 @@
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  color: rgb(255, 255, 255);
+  transition: left 0.3s;
+}
+
+.sidebar.show {
+  left: 0;
+}
+
+.sidebar .nav-link {
+  color: rgb(0, 0, 0);
+}
+
+.sidebar .nav-link:hover {
+  background-color: #02ae5b;
+  color: white;
+}
+
+/* Main Content */
+.main-content {
+  transition: margin-left 0.3s;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: bold;
+}
+
+.carousel-img {
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Card Styles */
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* Modal Styles */
+.modal-content {
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: #28a745;
+  font-size: 14px;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.profile-card {
+  max-width: 600px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #28a745;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .sidebar {
+    position: static;
+    height: auto;
+    width: 100%;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-img {
+    height: 300px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+/* Handphone */
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: left 0.3s ease;
+    z-index: 1050;
+  }
+
+  .sidebar.show {
+    left: 0;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  /* Tombol close sidebar */
+  .sidebar .btn-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-img {
+    height: 300px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
