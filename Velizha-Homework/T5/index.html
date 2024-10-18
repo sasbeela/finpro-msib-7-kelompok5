@@ -1,0 +1,365 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Learning Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<style>
+.carousel-img {
+  height: 500px;
+  object-fit: cover; 
+}
+
+</style>
+<body class="bg-gray-200 font-sans">
+  <div class="d-flex flex-column flex-md-row h-100">
+    <!-- Sidebar -->
+    <div class="bg-white shadow-md flex flex-column p-4" style="width: 300px;">
+      <!-- Navbar -->
+      <div class="d-flex align-items-center justify-content-between mb-4">
+        <div class="d-flex align-items-center">
+          <img alt="Logo" class="me-2" height="24" src="assets\logo.png" width="60"/>
+          <span class="fs-5 fw-semibold">Graduedu</span>
+        </div>
+        <div class="d-flex align-items-center">
+          <i class="fas fa-bell fs-5 me-3"></i>
+          <img alt="User" class="rounded-circle" height="32" src="assets\user.webp" width="32"/>
+        </div>
+      </div>
+      <!-- Tabs -->
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link text-gray-600 py-2 px-4 rounded-md" href="#" data-tab="dashboard">Dashboard</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-gray-600 py-2 px-4 rounded-md dropdown-toggle" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+          <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+            <li><a class="dropdown-item" href="#" data-tab="my-courses">My Courses</a></li>
+            <li><a class="dropdown-item" href="#" data-tab="course-offers">Course Offers</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-gray-600 py-2 px-4 rounded-md dropdown-toggle" href="#" id="settingsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Settings</a>
+          <ul class="dropdown-menu" aria-labelledby="settingsDropdown">
+            <li><a class="dropdown-item" href="#" data-tab="account">Account</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-gray-600 py-2 px-4 rounded-md" href="#" id="logout">Logout</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Main Content -->
+    <div class="flex-1 p-6 overflow-auto">
+      <div id="dashboard" class="tab-content d-none">
+        <h1 class="fs-4 fw-semibold mb-4">Dashboard</h1>
+        <!-- Carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide mb-4" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets\kursol.jpg" class="d-block w-100 carousel-img" alt="Banner Image 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets\kursol 2.png" class="d-block w-100 carousel-img" alt="Banner Image 2">
+              </div>
+              <div class="carousel-item">
+                <img src="assets\kursol 3.jpg" class="d-block w-100 carousel-img" alt="Banner Image 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+        <!-- Cards -->
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="bg-white p-4 rounded-lg shadow-md">
+              <h2 class="fs-5 fw-semibold mb-3">Webinar</h2>
+              <p class="text-gray-600">Ikut webinar dengan topik menarik yaitu "Data Science"</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bg-white p-4 rounded-lg shadow-md">
+              <h2 class="fs-5 fw-semibold mb-3">Special Course </h2>
+              <p class="text-gray-600">Ikut kursus berikut dan raih kesempatan untuk mendapatkan golden ticket</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bg-white p-4 rounded-lg shadow-md">
+              <h2 class="fs-5 fw-semibold mb-3">News</h2>
+              <p class="text-gray-600">Pembahasan menarik mengenai HTML dan CSS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="my-courses" class="tab-content d-none">
+        <h1 class="fs-4 fw-semibold mb-4">My Courses</h1>
+        <!-- Attended View -->
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card" data-course="web-designer">
+              <div class="card-body">
+                <h5 class="card-title">Web Designer Course</h5>
+                <p class="card-text">Learn the fundamentals of web design.</p>
+                <a href="#" class="btn btn-primary course-link" data-course="web-designer">Lihat  Detail</a>
+                <a href="#" class="btn btn-secondary materi-access-link" data-course="web-designer">Materi</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card" data-course="front-end">
+              <div class="card-body">
+                <h5 class="card-title">Front End Course</h5>
+                <p class="card-text">Master the skills of front-end development.</p>
+                <a href="#" class="btn btn-primary course-link" data-course="front-end">Lihat  Detail</a>
+                <a href="#" class="btn btn-secondary materi-access-link" data-course="front-end">Materi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="course-details" class="tab-content d-none">
+        <h1 class="fs-4 fw-semibold mb-4" id="course-title">Course Details</h1>
+        <!-- Attended View -->
+        <div class="mb-4">
+          <h2 class="fs-5 fw-semibold mb-3">Courses Attended</h2>
+          <ul class="list-group" id="course-attended-list">
+          </ul>
+        </div>
+        <!-- Assignment Notifications -->
+        <div>
+          <h2 class="fs-5 fw-semibold mb-3">Assignment Notifications</h2>
+          <ul class="list-group" id="assignment-notifications-list">
+          </ul>
+        </div>
+      </div>
+      <div id="course-offers" class="tab-content d-none">
+        <h1 class="fs-4 fw-semibold mb-4">Course Offers</h1>
+        <!-- Course Offers content -->
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">UI/UX Design</h5>
+                <p class="card-text">Learn the principles of UI/UX design.</p>
+                <a href="#" class="btn btn-primary">Daftar Sekarang</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Cyber Security</h5>
+                <p class="card-text">Understand the fundamentals of cyber security.</p>
+                <a href="#" class="btn btn-primary">Daftar Sekarang</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Full Stack</h5>
+                <p class="card-text">Become a full stack developer.</p>
+                <a href="#" class="btn btn-primary">Daftar Sekarang</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Data Science</h5>
+                <p class="card-text">Dive into data science and analytics.</p>
+                <a href="#" class="btn btn-primary">Daftar Sekarang</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Mobile Development</h5>
+                <p class="card-text">Learn to develop mobile applications.</p>
+                <a href="#" class="btn btn-primary">Daftar Sekarang</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="settings" class="tab-content d-none">
+        <h1 class="fs-4 fw-semibold mb-4">Settings</h1>
+        <!-- Settings -->
+      </div>
+      <div id="account" class="tab-content d-none">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="fs-4 fw-semibold mb-4">My Settings</h1>
+            <!-- Settings content -->
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@gmail.com">
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="***">
+              </div>
+              <button type="submit" class="btn btn-primary">Save Changes</button>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <h1 class="fs-4 fw-semibold mb-4">Profile</h1>
+            <!-- Profile content -->
+            <div class="card">
+              <img src="assets\user.webp" class="card-img-top" alt="User">
+              <div class="card-body">
+                <h5 class="card-title">Kayla</h5>
+                <p class="card-text">Data Sciencetist</p>
+                <a href="#" class="btn btn-primary">Edit Profile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="chat" class="tab-content d-none">
+        <h1 class="fs-4 fw-semibold mb-4">Chat with Admin</h1>
+        <div class="chat-body">
+          <div class="d-flex mb-3">
+            <div class="flex-shrink-0">
+              <img src="assets\admin.jpeg" class="rounded-circle" alt="User Avatar" width="40" height="40">
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <div class="bg-light rounded p-2">
+                <p class="mb-0">Hai, apakah ada yang bisa saya bantu?</p>
+              </div>
+            </div>
+          </div>
+          <!-- Chat -->
+        </div>
+        <div class="chat-footer">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Type a message...">
+            <button class="btn btn-primary" type="button">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Chat Icon -->
+  <div class="position-fixed bottom-0 end-0 p-3">
+    <button class="btn btn-primary rounded-circle" id="chat-icon">
+      <i class="fas fa-comments"></i>
+    </button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const tabLinks = document.querySelectorAll('.nav-link');
+      const dropdownLinks = document.querySelectorAll('.dropdown-item');
+      const tabContents = document.querySelectorAll('.tab-content');
+      const courseLinks = document.querySelectorAll('.course-link');
+      const chatIcon = document.getElementById('chat-icon');
+      const logoutLink = document.getElementById('logout');
+
+      function switchTab(targetTab) {
+        tabLinks.forEach(link => link.classList.remove('bg-gray-100'));
+        dropdownLinks.forEach(link => link.classList.remove('bg-gray-100'));
+
+        tabContents.forEach(content => content.classList.add('d-none'));
+        document.getElementById(targetTab).classList.remove('d-none');
+      }
+
+      tabLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetTab = this.getAttribute('data-tab');
+          switchTab(targetTab);
+          this.classList.add('bg-gray-100');
+        });
+      });
+
+      dropdownLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetTab = this.getAttribute('data-tab');
+          switchTab(targetTab);
+          this.classList.add('bg-gray-100');
+        });
+      });
+
+      courseLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          const course = this.getAttribute('data-course');
+          const courseTitle = course === 'web-designer' ? 'Web Designer Course' : 'Front End Course';
+          const courseAttendedList = document.getElementById('course-attended-list');
+          const assignmentNotificationsList = document.getElementById('assignment-notifications-list');
+
+          document.getElementById('course-title').innerText = courseTitle;
+          courseAttendedList.innerHTML = '';
+          assignmentNotificationsList.innerHTML = '';
+          const coursesAttended = [
+            { name: 'Course 1', progress: 75 },
+            { name: 'Course 2', progress: 50 },
+            { name: 'Course 3', progress: 90 }
+          ];
+
+          coursesAttended.forEach(course => {
+            const li = document.createElement('li');
+            li.className = 'list-group-item d-flex justify-content-between align-items-center';
+            li.innerHTML = `
+              <div>
+                <h5 class="mb-1">${course.name}</h5>
+                <small>Completion Progress: ${course.progress}%</small>
+              </div>
+              <div class="progress w-50">
+                <div class="progress-bar" role="progressbar" style="width: ${course.progress}%;" aria-valuenow="${course.progress}" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            `;
+            courseAttendedList.appendChild(li);
+          });
+
+          const assignments = [
+            { name: 'Assignment 1', due: '2024-10-10', status: 'Upcoming' },
+            { name: 'Assignment 2', due: '2024-10-07', status: 'Overdue' },
+            { name: 'Assignment 3', due: '2024-10-24', status: 'Upcoming' }
+          ];
+
+          assignments.forEach(assignment => {
+            const li = document.createElement('li');
+            li.className = 'list-group-item d-flex justify-content-between align-items-center';
+            li.innerHTML = `
+              <div>
+                <h5 class="mb-1">${assignment.name}</h5>
+                <small>Due: ${assignment.due}</small>
+              </div>
+              <span class="badge ${assignment.status === 'Upcoming' ? 'bg-warning text-dark' : 'bg-danger'}">${assignment.status}</span>
+            `;
+            assignmentNotificationsList.appendChild(li);
+          });
+
+          switchTab('course-details');
+        });
+      });
+
+      tabLinks[0].click();
+
+      chatIcon.addEventListener('click', function () {
+        switchTab('chat');
+      });
+    });
+  </script>
+</body>
+</html>
