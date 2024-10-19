@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Channel</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!--#HEADER-->
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+        <a href="tel:+6282139364389" class="helpline-box">
+
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+
+          <div class="wrapper">
+            <p class="helpline-title">Customer Service :</p>
+
+            <p class="helpline-number">+6282139364389</p>
+          </div>
+
+        </a>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/Travel_Channel_logo.png" alt="Travel Channel Logo">
+        </a>
+
+        <div class="header-btn-group">
+
+          <button class="search-btn" aria-label="Search">
+            <ion-icon name="search"></ion-icon>
+          </button>
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/Travel_Channel_logo.png" alt="Travel Channel Logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>home</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link" data-nav-link>tentang kami</a>
+            </li>
+
+            <li>
+              <a href="#destination" class="navbar-link" data-nav-link>destinasi</a>
+            </li>
+
+            <li>
+              <a href="#package" class="navbar-link" data-nav-link>Paket</a>
+            </li>
+
+            <li>
+              <a href="#gallery" class="navbar-link" data-nav-link>galeri</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-link>hubungi kami</a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <button class="btn btn-primary">pesan sekarang</button>
+
+      </div>
+    </div>
+
+  </header>
+  <main>
+    <article>
+
+      <!--#HERO-->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <h2 class="h1 hero-title">Temukan Dunia Ciptakan Kenangan</h2>
+
+          <p class="hero-text">
+            Travel Channel mengajak traveler mengeksplorasi destinasi baru dan menciptakan momen berharga di setiap perjalanan.
+          </p>
+
+          <div class="btn-group">
+            <button class="btn btn-primary">Pelajari lebih lanjut</button>
+
+            <button class="btn btn-secondary">Pesan Sekarang</button>
+          </div>
+
+        </div>
+      </section>
+
+      <!--#TOUR SEARCH-->
+      <section class="tour-search">
+        <div class="container">
+          <form action="" class="tour-search-form">
+            <div class="input-wrapper">
+              <label for="destination" class="input-label">Cari Destinasi*</label>
+
+              <input type="text" name="destination" id="destination" required placeholder="Masukan Destinasi"
+                class="input-field">
+            </div>
+            <div class="input-wrapper">
+              <label for="people" class="input-label">Jumlah Orang*</label>
+              <input type="number" name="people" id="people" required placeholder="Jumlah orang" class="input-field">
+            </div>
+            <div class="input-wrapper">
+              <label for="checkin" class="input-label">Tanggal Check-in*</label>
+              <input type="date" name="checkin" id="checkin" required class="input-field">
+            </div>
+            <div class="input-wrapper">
+              <label for="checkout" class="input-label">Tanggal Check-out*</label>
+              <input type="date" name="checkout" id="checkout" required class="input-field">
+            </div>
+            <button type="submit" class="btn btn-secondary">Pesan Sekarang</button>
+          </form>
+        </div>
+      </section>
+
+      <!--#POPULAR-->
+      <section class="popular" id="destination">
+        <div class="container">
+          <p class="section-subtitle">Temukan Tempat</p>
+          <h2 class="h2 section-title">Destinasi populer</h2>
+          <p class="section-text">
+            Destinasi-destinasi ini menjadi favorit para traveler karena keindahan, keunikan, dan kekayaan budayanya. Siap untuk menjelajahi lebih dalam? Mulailah merencanakan perjalananmu dan temukan dunia dari perspektif yang berbeda.
+          </p>
+          <ul class="popular-list">
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="./assets/images/tumpaksewu.png" alt="Tumpak Sewu" loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                  <p class="card-subtitle">
+                    <a href="#">Jawa Timur</a>
+                  </p>
+                  <h3 class="h3 card-title">
+                    <a href="#">Tumpak Sewu</a>
+                  </h3>
+                  <p class="card-text">
+                    Air Terjun Tumpak Sewu memiliki aliran air yang menyerupai tirai sehingga termasuk dalam tipe air terjun Tiered.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="./assets/images/bandaneira.png" alt="Banda Neira" loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                  <p class="card-subtitle">
+                    <a href="#">Maluku</a>
+                  </p>
+                  <h3 class="h3 card-title">
+                    <a href="#">Banda Neira</a>
+                  </h3>
+                  <p class="card-text">
+                    Banda Tangah atau Banda Naira adalah salah satu pulau di Kepulauan Banda, dan merupakan pusat administratif Kecamatan Banda, Kabupaten Maluku Tengah, Maluku, Indonesia.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="./assets/images/bromo.png" alt="Gunung Bromo" loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                  <p class="card-subtitle">
+                    <a href="#">Jawa Timur</a>
+                  </p>
+                  <h3 class="h3 card-title">
+                    <a href="#">Gn. Bromo</a>
+                  </h3>
+                  <p class="card-text">
+                    Gunung Bromo atau dalam bahasa Tengger dieja "Brama", juga disebut Kaldera Tengger, adalah sebuah gunung berapi aktif di Jawa Timur, Indonesia.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button class="btn btn-primary">Tujuan lainnya</button>
+        </div>
+      </section>
+
+      <!--#PACKAGE-->
+
+      <section class="package" id="package">
+        <div class="container">
+
+          <p class="section-subtitle">Paket Populer</p>
+
+          <h2 class="h2 section-title">Lihat Paket Kami</h2>
+
+          <p class="section-text">
+            Nikmati berbagai pilihan paket liburan terbaik yang dirancang khusus untuk memenuhi kebutuhan dan keinginan Anda. Pilih tujuan, sesuaikan perjalanan, dan bersiaplah untuk liburan yang luar biasa!
+          </p>
+
+          <ul class="package-list">
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/image 10.png" alt="Rasakan Liburan Hebat Di Raja Ampat" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Rasakan Liburan Hebat Di Raja Ampat</h3>
+
+                  <p class="card-text">
+                    Kepulauan Raja Ampat adalah gugusan kepulauan yang berlokasi di barat bagian Semenanjung Kepala Burung Pulau Papua.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">3D/2N</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">pax: 2, 5, 10</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text">Indonesia</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">(25 reviews)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    Rp.8jt
+                    <span>/ per orang</span>
+                  </p>
+
+                  <button class="btn btn-secondary">Pesan Sekarang</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/padma ubud.png" alt="Liburan Musim Panas Ke Ubud Bali" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Liburan Musim Panas Ke Ubud Bali</h3>
+
+                  <p class="card-text">
+                    Dikenal sebagai pusat tarian dan kerajinan tradisional. Hutan hujan dan terasering padi yang mengelilingi kawasan Ubud, ditambah pura dan tempat pemujaan.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">5D/4N</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">pax: 6</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text">Indonesia</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">(20 reviews)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    Rp.5jt
+                    <span>/ per orang</span>
+                  </p>
+
+                  <button class="btn btn-secondary">Pesan Sekarang</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/bromopaket.png" alt="Keajaiban Sunrise dan Lautan Pasir di Bromo" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Keajaiban Sunrise dan Lautan Pasir di Bromo</h3>
+
+                  <p class="card-text">
+                    Gunung Bromo menyajikan keindahan matahari terbit yang memukau dan petualangan di lautan pasir. Jelajahi kawah aktif dan nikmati panorama alam yang luar biasa. Bromo adalah destinasi wajib bagi pencinta alam dan fotografi.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">2D/1N</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">pax: 6</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text">Indonesia</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">(40 reviews)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    $1.5jt
+                    <span>/ per orang</span>
+                  </p>
+
+                  <button class="btn btn-secondary">Pesan Sekarang</button>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <button class="btn btn-primary">Lihat Semua Paket</button>
+
+        </div>
+      </section>
+
+      <!--#GALLERY-->
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+
+          <p class="section-subtitle">Galeri Foto</p>
+
+          <h2 class="h2 section-title">Foto dari Traveler Kami</h2>
+
+          <p class="section-text">
+            Setiap foto menangkap momen luar biasa dan keajaiban alam yang tak terlupakan. Temukan inspirasi perjalanan Anda berikutnya dari sudut pandang mereka yang telah berkeliling dunia.
+          </p>
+
+          <ul class="gallery-list">
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-1.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-2.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-3.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-4.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/img8.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!--#CTA-->
+      <section class="cta" id="contact">
+        <div class="container">
+
+          <div class="cta-content">
+            <p class="section-subtitle">Call To Action</p>
+
+            <h2 class="h2 section-title">Siap Untuk Perjalanan yang Tak Terlupakan. Ada Kami!</h2>
+
+            <p class="section-text">
+            </p>
+          </div>
+
+          <button class="btn btn-secondary">Hubungi Kami</button>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!--#FOOTER-->
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/Travel_Channel_logo.png" alt="Tourly logo">
+          </a>
+
+          <p class="footer-text">
+            Kami siap menghadirkan pengalaman liburan tak terlupakan dengan layanan profesional dan beragam pilihan destinasi.
+          </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+          <h4 class="contact-title">Hubungi Kami</h4>
+
+          <p class="contact-text">
+            Jangan ragu untuk menghubungi kami!
+          </p>
+
+          <ul>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+
+              <a href="tel:+6282139364389" class="contact-link">+6282139364389</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <a href="mailto:herdiantoivan45@gmail.com" class="contact-link">herdiantoivan45@gmail.com</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address>Jl. Rungkut Asri Timur XIII, No.63, Kota Surabaya</address>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-form">
+
+          <p class="form-text">
+            Berlangganan buletin kami untuk pembaruan & berita lebih lanjut!
+          </p>
+
+          <form action="" class="form-wrapper">
+            <input type="email" name="email" class="input-field" placeholder="Masukan Email" required>
+
+            <button type="submit" class="btn btn-secondary">Berlangganan</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="">TravelChannel</a>. All rights reserved
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Term & Condition</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">FAQ</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </footer>
+
+  <!--#GO TO TOP-->
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+  <!-- custom js link-->
+  <script src="./assets/js/script.js"></script>
+
+  <!--ionicon link-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
